@@ -1,6 +1,6 @@
 
 # This is a training program on how to create hangman program. It will consist of 5 programs  
-#Third program
+#Fourth program
 import random
 stages = ['''
   +---+
