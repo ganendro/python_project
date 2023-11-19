@@ -30,7 +30,7 @@ print(logo)
 
 should_continue = True
 while should_continue:
-    direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n")
+    direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n").lower()
     while direction not in ['decode','encode']:
         print("Invalid input, try again.\n")
         direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n").lower()
@@ -45,7 +45,7 @@ while should_continue:
     caesar(start_text=text, shift_amount=shift, cipher_direction=direction)
     result = input("Type 'yes' if you want to go again. Otherwise type 'no'.\n").lower()
     while result not in ['yes','no']:
-        print("please enter just yes or no")
+        print("Please enter just yes or no")
         result = input("Type 'yes' if you want to go again. Otherwise type 'no'.\n").lower()
     if result == "no":
         should_continue = False
