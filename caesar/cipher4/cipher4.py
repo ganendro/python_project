@@ -43,10 +43,10 @@ while should_continue:
     #Hint: Think about how you can use the modulus (%).
 
     caesar(start_text=text, shift_amount=shift, cipher_direction=direction)
-    result = input("Type 'yes' if you want to go again. Otherwise type 'no'.\n")
+    result = input("Type 'yes' if you want to go again. Otherwise type 'no'.\n").lower()
     while result not in ['yes','no']:
         print("please enter just yes or no")
-        result = input("Type 'yes' if you want to go again. Otherwise type 'no'.\n")
+        result = input("Type 'yes' if you want to go again. Otherwise type 'no'.\n").lower()
     if result == "no":
         should_continue = False
         print("Goodbye")
