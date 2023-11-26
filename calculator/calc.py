@@ -30,7 +30,7 @@ def calculator():
     cont =True
 
     while cont:
-        ops_symbol = input("Pick operatiron: ")
+        ops_symbol = input("Pick operation: ")
         num2=float(input("what is the second number?: "))
         ops_func = operations[ops_symbol]
         answer=ops_func(num1,num2)
